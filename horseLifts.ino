@@ -1,4 +1,3 @@
-
 class StepperMotor {
 
   private:
@@ -125,19 +124,19 @@ void loop() {
         activeSteppers++;
       }
       else if(activeSteppers == 1){
-        stepper2.start();
-        activeSteppers++;
-
-      } else if(activeSteppers == 2){
         stepper3.start();
         activeSteppers++;
 
+      } else if(activeSteppers == 2){
+        stepper5.start();
+        activeSteppers++;
+
       } else if(activeSteppers == 3){
-        stepper4.start();
+        stepper2.start();
         activeSteppers++;
 
       } else if(activeSteppers == 4){
-        stepper5.start();
+        stepper4.start();
         activeSteppers++;
 
       }
